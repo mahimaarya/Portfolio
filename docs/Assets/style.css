@@ -1,0 +1,370 @@
+/*CSS for Mahima Arya's resume website*/
+
+
+
+
+
+
+
+/* Skrollr CSS formatting */
+* {
+    padding:0;
+    margin:0;
+    /* necessary for preventing the following error */
+    /*[Intervention] Unable to preventDefault inside passive event listener due to target being treated as passive.*/
+    touch-action: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+html, body {
+    height:100%;
+}
+
+.skrollr-desktop body {
+    height:100% !important;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+p {
+    margin:.5% 0;
+}
+
+.parallax-image-wrapper {
+    position:fixed;
+    left:0;
+    width:100%;
+    overflow:hidden;
+}
+
+.parallax-image-wrapper-50 {
+    height:50%;
+    top:-50%;
+}
+
+.parallax-image-wrapper-100 {
+    height:100%;
+    top:-100%;
+}
+
+.parallax-image {
+    display:none;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.parallax-image-50 {
+    height:200%;
+    top:-50%;
+}
+
+.parallax-image-100 {
+    height:100%;
+    top:0;
+}
+
+.parallax-image.skrollable-between {
+    display:block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+    display:none !important;
+}
+
+#skrollr-body {
+    height:100%;
+    overflow:visible;
+    position:relative;
+}
+
+.gap {
+    background:transparent center no-repeat;
+    background-size:cover;
+}
+
+.skrollr .gap {
+    background:transparent !important;
+}
+
+.gap-50 {
+    height:50%;
+}
+
+.gap-100 {
+    height:100%;
+}
+
+.header, .content {
+    background:#fff;
+    padding:.5%;
+
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.content-full {
+    height:80%;
+}
+
+.done {
+    height:100%;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 32%;
+    padding-left: 2%;
+}
+
+.content {
+    font-family: Raleway;
+}
+
+.row.skrimg {
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* SKILLS */
+#msg1 {
+    font-size: 150%;
+    padding-bottom: 0;
+    line-height: 100%;
+}
+
+.text1 {
+    line-height: 120%;
+}
+
+
+#msg2, #msg7, #msg11, #msg13 {
+    font-size: 140%;
+    color: #f48fb1;
+}
+
+#msg3, #msg4, #msg5, #msg6, #msg8, #msg9, #msg10, #msg12, #msg14 {
+    font-size: 120%;
+}
+
+.buzz_wrapper1 {
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+/*BUZZ EFFECT BELONGS TO https://codepen.io/cRckls/*/
+/* makes the terminal code appear to buzz */
+/*################################################*/
+
+@-webkit-keyframes jerkwhole {
+  30% {  }
+  40% { opacity:1; top:0; left:0;  -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  41% { opacity:0.8; top:0px; left:-100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(50deg,0);}
+  42% { opacity:0.8; top:0px; left:100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(-80deg,0);}
+  43% { opacity:1; top:0; left:0; -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  65% { }
+}
+/*---------------------------*/
+
+
+.scanline1{
+  width:100%;
+  display:block;
+  height:4px;
+  position:relative;
+  z-index:3;
+  margin-bottom:1%;
+  opacity:0.1;
+}
+.buzz_wrapper1 span1{
+  position:absolute;
+  /*-webkit-filter: blur(0.00000001px);*/ /* caused blurring on safari*/
+  font-size:100%;
+  font-family:'Courier new', fixed;
+  font-weight:bold;
+}
+
+.buzz_wrapper1 span1{
+  -webkit-animation: blur 30ms infinite, jerk 50ms infinite;
+}
+.buzz_wrapper1 .text1{
+  -webkit-animation: jerkwhole 7s infinite;
+  position:relative;
+}
+
+
+
+
+
+
+/* HOME */
+p#hi {
+    font-family: Raleway;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    font-size: 500%;
+    color: white;
+}
+
+/* to make the arrow appear as though it is flashing */
+p#flashing {
+    position: absolute;
+    top: 80%;
+    left: 22.5%;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+p#flashing img {
+    width: 15%;
+    height: 15%;
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+/* SCHOOL */
+div#school h1 a {
+    font-size: 120%;
+}
+
+
+
+
+
+
+
+/* PUBLICATIONS */
+div#publications embed {
+    box-shadow: 3px 3px 5px #cccccc;
+    animation-duration: 2.5s;
+    width: 70%;
+    height: 100%;
+}
+
+
+
+
+
+
+/* PROJECTS */
+div#projects .row {
+    margin-top: 3%;
+}
+
+div#projects h1 {
+    margin-top: 0;
+}
+
+div#projects img {
+    box-shadow: 3px 3px 5px #cccccc;
+}
+
+
+
+
+
+
+
+/* MULTIPLE SECTIONS */
+.italics {
+    font-style: italic;
+}
+
+h2 {
+    font-size: 130%;
+    margin-top: 0;
+    margin-bottom: 20%;
+    text-align: right;
+    color: #f06292;
+}
+
+h1 {
+    font-size: 140%;
+}
+
+p {
+    font-size: 120%;
+}
+
+div#skills .row, div#publications .row, div#publications .col, div#projects .row {
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+div#leadership p, div#work p {
+    color: #616161;
+    font-size: 100%;
+}
+
+p.bold {
+    font-weight: bold;
+    color: #f48fb1 !important;
+    /*margin-top: 3%;*/
+}
+
+div#projects ul li, div#work ul li {
+    font-size: 70%;
+    list-style-type: square;
+}
+
+div.divider {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/* section headers */
+.ml5 {
+  position: relative;
+  font-size: 300%;
+  color: #402d2d;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 1%;
+  padding-right: .5%;
+  padding-bottom: 1%;
+  line-height: 100%;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  font-size: 100%;
+}
+
+

@@ -1,0 +1,390 @@
+<!-- HTML for Mahima Arya's resume website -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <title>Mahima Arya's Portfolio</title>
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="Assets/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <!-- Note: used materialize for responsive design -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="Assets/js/main.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+
+
+        <!--
+            We position the Assets/images fixed and therefore need to place them outside of #skrollr-body.
+            We will then use data-anchor-target to display the correct image matching the current section (.gap element).
+        -->
+        <!-- Skrollr images (Note that in-line css is necessary for functionality) -->
+        <!-- tiger image -->
+        <div class="row skrimg">
+            <div class="col offset-m2 offset-l2 parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-between" data-anchor-target=".tiger + .gap" data-bottom-top="transform:translate3d(0%, 200%, 0px)" data-top-bottom="transform:translate3d(0%, 0%, 0px)" style="transform: translate3d(0%, 106.783%, 0px); opacity: 0.8;">
+                <div class="parallax-image parallax-image-100 skrollable skrollable-between" style="background-image: url(Assets/images/tiger.JPG); transform: translate3d(0px, -5.42646%, 0px);" data-anchor-target=".tiger + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+                <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+            </div>
+        </div>
+
+        <!-- CMU campus image (the mall) -->
+        <div class="row skrimg">
+            <div class="col offset-m2 offset-l2 parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-before" data-anchor-target=".CMU + .gap" data-bottom-top="transform:translate3d(0%, 200%, 0px)" data-top-bottom="transform:translate3d(0%, 0%, 0px)" style="transform: translate3d(0%, 200%, 0px); opacity: 0.5">
+
+                <div class="parallax-image parallax-image-100 skrollable skrollable-before" style="background-image: url(Assets/images/CMU.jpg); transform: translate3d(0px, -95%, 0px);" data-anchor-target=".CMU + .gap" data-bottom-top="transform: translate3d(0px, -95%, 0px);" data-top-bottom="transform: translate3d(0px, 95%, 0px);"></div>
+                <!-- image from http://www.cmu.edu/assets/images/site/meta-image-cmu.jpg -->
+            </div>
+        </div>
+
+        <!-- hiking image -->
+        <div class="row skrimg">
+            <div class="col offset-m2 offset-l2 parallax-image-wrapper parallax-image-wrapper-50 skrollable skrollable-before" data-anchor-target=".hiking + .gap" data-bottom-top="transform:translate3d(0%, 300%, 0px)" data-top-bottom="transform:translate3d(0%, 0%, 0px)" style="transform: translate3d(0%, 300%, 0px); opacity: 0.5">
+
+                <div class="parallax-image parallax-image-50 skrollable skrollable-before" style="background-image: url(Assets/images/hiking.jpg); transform: translate3d(0px, -60%, 0px);" data-anchor-target=".hiking + .gap" data-bottom-top="transform: translate3d(0px, -60%, 0px);" data-top-bottom="transform: translate3d(0px, 60%, 0px);"></div>
+            </div>
+        </div>
+
+        <!-- CMU campus image (CFA) -->
+        <div class="row skrimg">
+            <div class="col offset-m2 offset-l2 parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-before" data-anchor-target=".CMU2 + .gap" data-bottom-top="transform:translate3d(0%, 230%, 0px)" data-top-bottom="transform:translate3d(0%, 0%, 0px)" style="transform: translate3d(0%, 400%, 0px); opacity: 0.5">
+
+                <div class="parallax-image parallax-image-100 skrollable skrollable-before" style="background-image: url(Assets/images/CMU2.jpg); transform: translate3d(0px, -80%, 0px);" data-anchor-target=".CMU2 + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+                <!-- image from https://www.thoughtco.com/thmb/aasAIO99TlauUfwBMkxL1AYCrkE=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/carnegie-mellon-university-flickr-58a2202d3df78c4758906789.jpg -->
+            </div>
+        </div>
+
+        <!-- cisco ceo image -->
+        <div class="row skrimg">
+            <div class="col offset-m2 offset-l2 parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-before" data-anchor-target=".ceo + .gap" data-bottom-top="transform:translate3d(0%, 200%, 0px)" data-top-bottom="transform:translate3d(0%, 0%, 0px)" style="transform: translate3d(0%, 500%, 0px); opacity: 0.5">
+
+                <div class="parallax-image parallax-image-100 skrollable skrollable-before" style="background-image: url(Assets/images/ceo.jpg); transform: translate3d(0px, -80%, 0px);" data-anchor-target=".ceo + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+            </div>
+        </div>
+
+        <!-- cisco campus image -->
+        <div class="row skrimg">
+            <div class="col offset-m2 offset-l2 parallax-image-wrapper parallax-image-wrapper-50 skrollable skrollable-before" data-anchor-target=".cisco + .gap" data-bottom-top="transform:translate3d(0%, 300%, 0px)" data-top-bottom="transform:translate3d(0%, 0%, 0px)" style="transform: translate3d(0%, 300%, 0px); opacity: 0.5">
+
+                <div class="parallax-image parallax-image-100 skrollable skrollable-before" style="background-image: url(Assets/images/cisco.jpg); transform: translate3d(0px, -30%, 0px);" data-anchor-target=".cisco + .gap" data-bottom-top="transform: translate3d(0px, -30%, 0px);" data-top-bottom="transform: translate3d(0px, 30%, 0px);"></div>
+            </div>
+        </div>
+
+        <!-- Actual website body -->
+
+        <div id="skrollr-body">
+
+
+            <!-- NAVBAR -->
+            <div class="navbar-fixed">
+                <div class="col hide-on-small-only m3 l2">
+                  <h2>MAHIMA<br/>ARYA</h2>
+                  <ul class="section table-of-contents">
+                    <li class="link"><a href="#home">Home</a></li>
+                    <li class="link"><a href="#school">School</a></li>
+                    <li class="link"><a href="#skills">Skills</a></li>
+                    <li class="link"><a href="#publications">Publications</a></li>
+                    <li class="link"><a href="#projects">Projects</a></li>
+                    <li class="link"><a href="#leadership">Leadership</a></li>
+                    <li class="link"><a href="#work">Work</a></li>
+                  </ul>
+                </div>
+            </div>
+
+
+
+            <!-- HOME -->
+            <p id="hi">Hi,<br/>I'm Mahima.<p>
+            <p id="flashing" class="center-align"><a href="#school"><img class="center-align" src="Assets/images/arrow.png" alt="down arrow"></a></p>
+            <div id="home" class="tiger">
+            </div>
+            <div class="gap gap-100" style="background-image:url(Assets/images/tiger.JPG);"></div>
+
+
+
+            <!-- SCHOOL -->
+            <div id="school" class="CMU content section scrollspy">
+                <div class="row center-align">
+                    <div class="col m9 offset-m2 l10 offset-l2 center-align">
+                        <h1 class="ml5 center-align">
+                            <span class="text-wrapper">
+                                <span>Carnegie Mellon</span>
+                                <span>University</span>
+                            </span>
+                        </h1>
+                        <h1 class="center-align">B.S. in Information Systems<br/>Additional Major in Human-Computer Interaction</h1>
+                        <h1 class="center-align"><a class="waves-effect waves-light btn-large">GPA?</a></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="gap gap-100" style="background-image:url(Assets/images/CMU.jpg);"></div>
+
+
+
+
+            <!-- SKILLS -->
+            <div class="hiking content section scrollspy" id="skills" >
+                <div class="row">
+                    <section class="col m9 offset-m2 l10 offset-l2 s12">
+                        <div class="buzz_wrapper1">
+                            <div class="text1">
+                                <span1><div id="msg1"></div></span1>
+                            </div>
+                      
+                        </div><br/><br/><br/>
+
+                        <div class="buzz_wrapper1">
+                            <div class="text1">
+                                <span1><div id="msg2"></div></span1>
+                            </div>
+                            <div class="scanline1"></div>
+                            <div class="scanline1"></div>
+                          
+                            <div class="text1">
+                                <span1><div id="msg3"></div></span1>
+                                <br/>
+                                <span1><div id="msg4"></div></span1>
+                                <br/>
+                                <span1><div id="msg5"></div></span1>
+                                <br/>
+                                <span1><div id="msg6"></div></span1>
+                            </div>
+                          
+                        </div><br/>
+
+                        <div class="buzz_wrapper1">
+                            <div class="text1">
+                                <span1><div id="msg7"></div></span1>
+                            </div>
+                            <div class="scanline1"></div>
+                            <div class="scanline1"></div>
+                          
+                            <div class="text1">
+                                <span1><div id="msg8"></div></span1>
+                                <br/>
+                                <span1><div id="msg9"></div></span1>
+                                <br/>
+                                <span1><div id="msg10"></div></span1>
+                            </div>
+                          
+                        </div><br/>
+
+                        <div class="buzz_wrapper1">
+                            <div class="text1">
+                                <span1><div id="msg11"></div></span1>
+                            </div>
+                            <div class="scanline1"></div>
+                            <div class="scanline1"></div>
+                          
+                            <div class="text1">
+                                <span1><div id="msg12"></div></span1>
+                            </div>
+                          
+                        </div><br/>
+
+                        <div class="buzz_wrapper1">
+                            <div class="text1">
+                                <span1><div id="msg13"></div></span1>
+                            </div>
+                            <div class="scanline1"></div>
+                            <div class="scanline1"></div>
+
+                            <div class="text1">
+                                <span1><div id="msg14"></div></span1>
+                            </div>
+                          
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+            <div class="gap gap-50" style="background-image:url(Assets/images/hiking.jpg);"></div>
+
+
+
+
+            <!-- PUBLICATIONS -->
+            <div class="CMU2 content content-full section scrollspy center-align" id="publications">
+                <div class="row">
+                    <div class="col m9 offset-m2 l10 offset-l2 s12">
+                        <h1 class="ml5 center-align">
+                            <span class="text-wrapper">
+                                <span>Publication at</span>
+                                <span>CHI 2018</span>
+                            </span>
+                        </h1>
+                        <embed src= "Assets/publication.pdf">
+                    </div>
+                </div>
+            </div>
+            <div class="gap gap-100" style="background-image:url(Assets/images/CMU2.jpg);"></div>
+
+
+
+
+            <!-- PROJECTS -->
+            <div class="ceo content section scrollspy" id="projects">
+                <div class="row">
+                    <div class="col m9 offset-m2 l10 offset-l2 s11 offset-s1">
+                        <div class="row">
+                            <div class="col m5 s12 flow-text">
+                                <h1>Python Term Project<br/><div class="italics">Cooking Ma(hi)ma</div></h1>
+                                <ul>
+                                    <li>Developed the popular Cooking Mama video game with Python, Kinect motion technology, and the PyGame module</li>
+                                    <li>Implemented a new Sandbox mode to allow users to create their own recipes and performed user testing on iterations</li>
+                                </ul>
+                            </div>
+                            <div class="col hide-on-small-only s6 push-s1 flow-text">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/10lZYtGqpxo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col m5 s12 flow-text">
+                                <h1>Custom Web App<br/><div class="italics">Bun Bun Bake Shop Website</div></h1>
+                                <ul>
+                                    <li>Developed an e-commerce website with HTML, CSS, and JQuery</li>
+                                    <li>Implemented a shopping cart to allow users to add, update, and delete items</li>
+                                    <li>Designed the user experience with iterations of low, mid, and <a href="https://invis.io/46O4PKBRTM9" target="_blank">high fidelity prototypes</a></li>
+                                </ul>
+                            </div>
+                            <div class="col s6 push-s1 flow-text hide-on-small-only">
+                                <a href="http://www.andrew.cmu.edu/user/mahimaa/" target="_blank"><img class="center-align responsive-img" src="Assets/images/bunThumbnail.png" alt="Bun Bun Bake Shop thumbnail"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap gap-100" style="background-image:url(Assets/images/ceo.jpg);"></div>
+
+
+
+
+            <!-- LEADERSHIP -->
+            <div class="cisco content section scrollspy" id="leadership">
+                <div class="row">
+                    <div class="col m9 offset-m2 l10 offset-l2 s11 offset-s1">
+                        <h1 class="ml5 center-align">
+                            <span class="text-wrapper">
+                                <span>Leadership</span>
+                                <span>Experience</span>
+                            </span>
+                        </h1>
+                        <div class="row">
+                            <div class="col m6 s12 flow-text">
+                                <p class="bold">Practical Data Science</p>
+                                <p class="italics">Teaching Assistant</p>
+                                <p>January 2019 - Present</p>
+                            </div>
+                            <div class="col m6 s12 flow-text">
+                                <p class="bold">Information Systems Milieux</p>
+                                <p class="italics">Teaching Assistant</p>
+                                <p>January 2018 - Present</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col m6 s12 flow-text">
+                                <p class="bold">Application Design and Development</p>
+                                <p class="italics">Teaching Assistant</p>
+                                <p>August 2018 - Present</p>
+                            </div>
+                            <div class="col m6 s12 flow-text">
+                                <p class="bold">South Asian Student Association</p>
+                                <p class="italics">President</p>
+                                <p>August 2017 - Present</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col m6 s12 flow-text">
+                                <p class="bold">Principles of Computing</p>
+                                <p class="italics">Teaching Assistant</p>
+                                <p>August 2018 - December 2018</p>
+                            </div>
+                            <div class="col m6 s12 flow-text">
+                                <p class="bold">Database Design and Development</p>
+                                <p class="italics">Teaching Assistant</p>
+                                <p>January 2018 - May 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap gap-50" style="background-image:url(Assets/images/cisco.jpg);"></div>
+
+
+
+
+            <!-- WORK -->
+            <div class="content section scrollspy" id="work">
+                <div class="row">
+                    <div class="col m9 offset-m2 l10 offset-l2 s11 offset-s1">
+                        <h1 class="ml5 center-align">
+                            <span class="text-wrapper">
+                                <span>Work</span>
+                                <span>Experience</span>
+                            </span>
+                        </h1>
+                        <div class="row">
+                            <div class="col m5 s12 flow-text">
+                                <p class="bold">Cisco Systems</p>
+                                <p class="italics">Software Engineering Intern</p>
+                                <p>May 2018 - August 2018</p>
+                            </div>
+                            <div class="col s6 push-s1 flow-text hide-on-small-only">
+                                <ul>
+                                    <li>Tasked with creating personalized automated emails and streamlining the online project allocation process</li>
+                                    <li>Utilized Flask and MongoDB in Python-based web application to query data and develop API endpoints</li>
+                                    <li>Improve time efficiency of project allocation process by over 75%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col m5 s12 flow-text">
+                                <p class="bold">Carnegie Mellon University Human-Computer Interaction Institute</p>
+                                <p class="italics">User Experience Research Intern</p>
+                                <p>May 2017 - January 2018</p>
+                            </div>
+                            <div class="col hide-on-small-only s6 push-s1 flow-text">
+                                <ul>
+                                    <li>Tasked with designing the Git view for the RoseQuartz system, a tool for reviewing program output across multiple versions</li>
+                                    <li>Sketched paper and digital prototypes of UI</li>
+                                    <li>Git view design was implemented into the system, boosting usability and accesibility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+
+        <!-- Initialize the Skrollr JS -->
+        <script type="text/javascript" src="Assets/js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init();
+        </script>
+    </body>
+</html>
