@@ -84,10 +84,10 @@ $(document).on('click', 'a.waves-effect.waves-light.btn-large', function() {
     $(d).removeClass("waves-effect");
     $(d).removeClass("waves-light");
     $(d).removeClass("btn-large");
-    // GPA incrementer (stops when it hits 3.91)
+    // GPA incrementer (stops when it hits 3.93)
     // adapted from https://codepen.io/shivasurya/pen/FatiB
     $(d).prop('Counter',0).animate({
-        Counter: 391
+        Counter: 393
     }, {
         duration: 4000,
         easing: 'swing',
