@@ -144,17 +144,17 @@ p {
 }
 
 .text1 {
-    line-height: 120%;
+    line-height: 130%;
 }
 
 
-#msg2, #msg7, #msg11, #msg13 {
+#msg2, #msg5, #msg7, #msg9 {
     font-size: 140%;
     color: #f48fb1;
 }
 
-#msg3, #msg4, #msg5, #msg6, #msg8, #msg9, #msg10, #msg12, #msg14 {
-    font-size: 120%;
+#msg3, #msg4, #msg6, #msg8, #msg10, #msg11, #msg12 {
+    font-size: 130%;
 }
 
 .buzz_wrapper1 {

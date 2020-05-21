@@ -84,10 +84,10 @@ $(document).on('click', 'a.waves-effect.waves-light.btn-large', function() {
     $(d).removeClass("waves-effect");
     $(d).removeClass("waves-light");
     $(d).removeClass("btn-large");
-    // GPA incrementer (stops when it hits 3.93)
+    // GPA incrementer (stops when it hits 3.94)
     // adapted from https://codepen.io/shivasurya/pen/FatiB
     $(d).prop('Counter',0).animate({
-        Counter: 393
+        Counter: 394
     }, {
         duration: 4000,
         easing: 'swing',
@@ -137,18 +137,17 @@ $(window).on('scroll',function(){
         // some text is displayed at the same time to not make the animation too slow
         showText("#msg1", "Mahimas-Resume:~ mahimaarya$ cat mahimas_skills.txt", 0, 20);
         setTimeout(function(){showText("#msg2", "Programming Languages", 0, 20)},1000);
-        setTimeout(function(){showText("#msg3", "Python, Flask", 0, 20)},2000);
-        setTimeout(function(){showText("#msg4", "Swift", 0, 20)},3000);
-        setTimeout(function(){showText("#msg5", "Ruby on Rails", 0, 20)},4000);
-        setTimeout(function(){showText("#msg6", "C", 0, 20)},4000);
-        setTimeout(function(){showText("#msg7", "Databases", 0, 20)},1000);
-        setTimeout(function(){showText("#msg8", "SQL", 0, 20)},2000);
-        setTimeout(function(){showText("#msg9", "MongoDB", 0, 20)},3000);
-        setTimeout(function(){showText("#msg10", "Redis", 0, 20)},4000);
-        setTimeout(function(){showText("#msg11", "Web Development", 0, 20)},1000);
-        setTimeout(function(){showText("#msg12", "JavaScript, JQuery, HTML, CSS, GitHub", 0, 20)},2000);
-        setTimeout(function(){showText("#msg13", "Big Data", 0, 20)},1000);
-        setTimeout(function(){showText("#msg14", "Hadoop (Pig, MRJob)", 0, 20)},2000);    }
+        setTimeout(function(){showText("#msg3", "Python, Node.js, Ruby on Rails", 0, 20)},2000);
+        setTimeout(function(){showText("#msg4", "C, Swift, R", 0, 20)},3000);
+        setTimeout(function(){showText("#msg5", "Databases", 0, 20)},1000);
+        setTimeout(function(){showText("#msg6", "SQL, MongoDB, Redis", 0, 20)},2000);
+        setTimeout(function(){showText("#msg7", "Web Development", 0, 20)},1000);
+        setTimeout(function(){showText("#msg8", "JavaScript, JQuery, HTML, CSS, GitHub", 0, 20)},2000);
+        setTimeout(function(){showText("#msg9", "User Research", 0, 20)},1000);
+        setTimeout(function(){showText("#msg10", "Wireframing & Prototyping, Contextual Inquiry", 0, 20)},2000);
+        setTimeout(function(){showText("#msg11", "Persona Creation, Storyboarding", 0, 20)},3000);
+        setTimeout(function(){showText("#msg12", "Experience Prototyping, Usability Studies", 0, 20)},3000);
+    }
     // update the navbar based on scrolling activity
     updateNavbar();
 
